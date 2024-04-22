@@ -9,7 +9,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div className="fixed flex w-full bg-white bg-opacity-75 backdrop-blur-sm h-[4.5rem] shadow-lg items-center pl-3 pr-6 gap-6">
+    <div className="fixed flex w-full bg-white z-10 bg-opacity-85 backdrop-blur-sm h-[4.5rem] shadow-lg items-center pl-3 pr-6 gap-6">
       <img src={NetlifyLogo} className="w-32"></img>
       <nav className="flex w-full justify-between">
         <div className="navbar-menu flex items-center">
