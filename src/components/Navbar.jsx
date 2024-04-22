@@ -3,7 +3,7 @@ import NavbarFlyout from "./NavbarFlyout";
 import PlatformContent from "./PlatformContent";
 import SolutionContent from "./SolutionContent";
 import StartBuildingContent from "./StartBuildingContent";
-import NetlifyLogo from "../assets/netlify-logo.svg";
+import NetlifyLogo from "../assets/logo/netlify-logo.svg";
 import { FiSearch } from "react-icons/fi";
 import Button from "./Button";
 

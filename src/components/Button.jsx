@@ -1,8 +1,18 @@
 import React from "react";
 import className from "classnames";
 
-const Button = ({ children, href, outline, cyan, blue, wide, small }) => {
+const Button = ({
+  children,
+  href,
+  outline,
+  cyan,
+  blue,
+  wide,
+  small,
+  ...rest
+}) => {
   const classes = className(
+    rest.className,
     "w-fit h-fit p-2 rounded-md font-extrabold border-transparent",
     {
       "text-white bg-transparent border border-white": outline,

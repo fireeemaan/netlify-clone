@@ -2,6 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Button from "./components/Button";
+import Card from "./components/Card";
+import GoogleLogo from "./assets/logo/google.svg";
+import MattelLogo from "./assets/logo/mattel.svg";
+import PelotonLogo from "./assets/logo/peloton.svg";
+import RiotLogo from "./assets/logo/riot.svg";
+import TwilioLogo from "./assets/logo/twilio.svg";
+import UnileverLogo from "./assets/logo/unilever.svg";
 
 function App() {
   return (
@@ -51,6 +58,58 @@ function App() {
               teams — all supported by Enterprise-grade security, services, and
               a world-class partner ecosystem.
             </p>
+          </div>
+          <div className="card-group flex flex-row gap-6 mt-24">
+            <Card
+              tag="FRONT END CLOUD"
+              title="Deploy Faster"
+              linkContent="Learn More about Core"
+              greenTag
+            >
+              Netlify Core is a frontend cloud solution for developers to build
+              and deploy future-proof digital solutions with modern, composable
+              tooling that works with all modern frameworks.
+            </Card>
+            <Card
+              tag="DATA LAYER"
+              title="Unify all Content"
+              linkContent="Learn More about Connect"
+              blueTag
+            >
+              Netlify Connect is a data unification layer that gives web teams
+              the freedom to create world-class websites, online stores, and
+              applications with data from any existing or new content source.
+            </Card>
+            <Card
+              tag="VISUAL EDITOR"
+              title="Click, edit, publish"
+              linkContent="Learn More about Create"
+              yellowTag
+            >
+              Netlify Create gives digital teams the freedom to autonomously
+              perform content and website updates faster than ever before with
+              an intuitive visual editor.
+            </Card>
+          </div>
+
+          <Button small blue className="mt-12 mb-24">
+            Explore the Platform
+          </Button>
+
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-4xl font-black">Enterprises run on Netlify</h1>
+            <div className="flex flex-row justify-center items-center gap-16 mt-6">
+              <img src={TwilioLogo} alt="Twilio Logo" className="h-20 w-28" />
+              <img src={MattelLogo} alt="Mattel Logo" className="h-20 w-28" />
+              <img src={GoogleLogo} alt="Google Logo" className="h-20 w-28" />
+              <img src={RiotLogo} alt="Riot Logo" className="h-20 w-28" />
+              <img
+                src={UnileverLogo}
+                alt="Unilever Logo"
+                className="h-20 w-28"
+              />
+              <img src={PelotonLogo} alt="Peloton Logo" className="h-20 w-28" />
+            </div>
           </div>
         </div>
       </div>
