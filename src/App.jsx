@@ -113,8 +113,26 @@ function App() {
             </div>
           </div>
 
-          <div>
-            <CodeCard />
+          <div className="flex flex-col justify-center items-center mt-28 w-full h-fit bg-[#2B45CA] bg-[url('./assets/grid-bg.svg')] bg-no-repeat">
+            <div className="flex flex-col justify-center items-center py-20 w-full h-full bg-gradient-to-t from-black/70 to-transparent">
+              <CodeCard></CodeCard>
+              <div className="flex flex-row gap-32 mt-16 text-center">
+                <div>
+                  <h1 className="text-3xl font-black text-white">35M+</h1>
+                  <p className="text-base text-white">
+                    Website deployed on Netlify
+                  </p>
+                </div>
+                <div>
+                  <h1 className="text-3xl font-black text-white">4M+</h1>
+                  <p className="text-base text-white">Developers</p>
+                </div>
+                <div>
+                  <h1 className="text-3xl font-black text-white">99.99%</h1>
+                  <p className="text-base text-white">Uptime SLA</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -9,18 +9,16 @@ import { FaRegWindowMaximize } from "react-icons/fa";
 import { TbLambda } from "react-icons/tb";
 import { Typewriter } from "react-simple-typewriter";
 
-const CodeCard = () => {
+const CodeCard = (...rest) => {
   const [activeIndex, setActiveIndex] = useState(1);
   const [clicked, setClicked] = useState(false);
-  const wordSelected = className({
-    "e-commerce site": activeIndex === 1,
-    "AI chatbot": activeIndex === 2,
-    "landing page": activeIndex === 3,
-    "edge function": activeIndex === 4,
-  });
+  const classes = className(
+    "flex border border-[#5d8df5] flex-row w-fit h-fit rounded-xl",
+    rest.className
+  );
 
   return (
-    <div className="flex border border-[#5d8df5] flex-row w-fit h-fit rounded-xl">
+    <div className={classes}>
       <div className="flex flex-col w-[27rem] bg-[#2136A0] rounded-l-xl border border-[#5d8df5] p-8 gap-7">
         <h1 className="text-white text-4xl font-black">
           Ship your <br />
