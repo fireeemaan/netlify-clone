@@ -5,3 +5,11 @@
 * {
   font-family: "Mulish", sans-serif;
 }
+
+.language-javascript span {
+  font-family: "JetBrains Mono", monospace;
+}
+
+pre {
+  background-color: #1a205d !important;
+}

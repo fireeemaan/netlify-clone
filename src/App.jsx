@@ -9,6 +9,7 @@ import PelotonLogo from "./assets/logo/peloton.svg";
 import RiotLogo from "./assets/logo/riot.svg";
 import TwilioLogo from "./assets/logo/twilio.svg";
 import UnileverLogo from "./assets/logo/unilever.svg";
+import CodeCard from "./components/CodeCard";
 
 function App() {
   return (
@@ -110,6 +111,10 @@ function App() {
               />
               <img src={PelotonLogo} alt="Peloton Logo" className="h-20 w-28" />
             </div>
+          </div>
+
+          <div>
+            <CodeCard />
           </div>
         </div>
       </div>

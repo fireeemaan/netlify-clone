@@ -13,7 +13,7 @@ const Card = ({
   yellowTag,
 }) => {
   const classes = className(
-    "w-fit h-fit py-0.5 px-3 rounded-full font-bold text-sm bg-blue-200",
+    "w-fit h-fit py-0.5 px-3 rounded-full font-bold text-sm",
     {
       "bg-[#DEFFFF] text-[#014847]": greenTag,
       "bg-[#ECF4FE] text-[#2036a1]": blueTag,
