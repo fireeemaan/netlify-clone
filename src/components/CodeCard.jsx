@@ -118,13 +118,13 @@ const CodeCard = (...rest) => {
 const Code = ({ activeIndex }) => {
   return (
     <div className="overflow-hidden rounded-br-xl">
-      <div className="w-[27rem] h-[20rem]">
+      <div className="w-[27rem] h-[23rem] overflow-hidden">
         {activeIndex === 1 && <ECommerce />}
         {activeIndex === 2 && <AIChatbot />}
         {activeIndex === 3 && <LandingPage />}
         {activeIndex === 4 && <EdgeFunction />}
       </div>
-      <div className="-mt-[4.5rem] rounded-br-xl p-2 flex flex-row border border-[#5d8df5] justify-end bg-[#1a205d]">
+      <div className="-mt-[6.5rem] rounded-br-xl p-2 flex w-full h-full flex-row border border-[#5d8df5] justify-end bg-[#1a205d]">
         <Button cyan small>
           Deploy
         </Button>
