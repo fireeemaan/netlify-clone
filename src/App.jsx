@@ -134,7 +134,24 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col justify-center items-center mt-24 gap-14">
+            <h1 className="text-5xl font-extrabold">Ready to try Netlify?</h1>
+            <Button blue small>
+              Request Demo
+            </Button>
+          </div>
         </div>
+        <footer className="flex flex-col justify-center items-center mt-36 mb-8">
+          <p className="text-base font-bold text-center">
+            <span className="underline">
+              <a href="https://netlify.com">netlify.com</a>
+            </span>{" "}
+            clone by <br></br>
+            <span className="underline">
+              <a href="https://github.com/fireeemaan">@fireeemaan</a>
+            </span>
+          </p>
+        </footer>
       </div>
     </>
   );
